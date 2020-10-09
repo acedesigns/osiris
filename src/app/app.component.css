@@ -1,0 +1,40 @@
+.jumbotron {
+    background: #2c2e31;
+    /*min-height: 970px;*/
+    border-radius: 0;
+}
+
+.person_box {
+    margin: -80px auto 0 auto;
+}
+.uk-card-outer {
+    border: 1px solid #c0c0c0;
+    width: 70%;
+}
+.my-card-header { height: 100px; background: #f9f9f9; }
+.image-header { z-index: 99; border-radius: 100px; box-shadow: none; }
+.image-header .uk-card-header { border: 1px solid #c0c0c0; border-radius: 100px; padding: 5px; }
+
+h4,h6 { margin: 0; }
+
+h4.singleElement { color: #c8c8c8; }
+h6.singleElement { color: #2c2e31; }
+
+.details-card { border-top: 0; }
+.details-card .uk-card { margin: 20px 0 0 0; }
+.response_data { text-align: center; margin: 20px 0 0 0; }
+
+.icon-footer { border-top: 0; }
+
+.u-image--rounded {
+    border-radius: 290486px;
+}
+
+.uk-tab>*>a:focus, .uk-tab>*>a:hover {
+    background: #83ba43;
+    color: #fff;
+}
+
+.uk-tab>.uk-active>a {
+    border-color: #83ba43;
+}

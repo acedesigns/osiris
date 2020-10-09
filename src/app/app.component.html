@@ -1,0 +1,103 @@
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="d-flex align-content-center flex-wrap">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="person_box uk-flex uk-flex-center">
+        <div class="uk-card uk-card-default uk-card-body uk-card-outer my-card-header">
+
+            <div class="uk-flex uk-flex-center ">
+
+                <div class="uk-card uk-card-default image-header">
+                    <div class="uk-card-header">
+                        <div class=" uk-flex-middle animate__animated animate__slower animate__bounceInUp">
+                            <div class="uk-width-auto" *ngIf=" apiData != null">
+                                <img class="uk-border-circle- u-image--rounded"  [src]=" apiData?.picture.large" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="person_box_ uk-flex uk-flex-center">
+        <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-card-outer details-card">
+
+            <div class="uk-flex uk-flex-center">
+
+                <div class="uk-card ">
+
+                    <div class="uk-card-body">
+
+                        <div #elements class="animate__animated response_data">
+                            <h4 class="singleElement">
+                                Loading ...
+                            </h4>
+                            <h6 class="singleElement">
+                                Loading ...
+                            </h6>
+                        </div>
+
+                        <!--<input #someInput placeholder="Your favorite sea creature">-->
+
+                    </div>
+
+                    <div class="uk-card-footer icon-footer uk-flex uk-flex-center">
+
+                        <ul class="uk-tab-bottom" uk-tab>
+                            <li (mouseenter)="onMouseEnter( 'name' )" class="animate__animated animate__fadeInDown">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/user.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                            <li (mouseenter)="onMouseEnter( 'email' )" class="animate__animated animate__fadeInUp">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/email.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                            <li (mouseenter)="onMouseEnter('dob')" class="animate__animated animate__zoomIn">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/calendar.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                            <li (mouseenter)="onMouseEnter('location')" class="animate__animated animate__fadeInLeft">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/map-location.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                            <li (mouseenter)="onMouseEnter( 'phone' )" class="animate__animated animate__zoomIn">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/call.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                            <li (mouseenter)="onMouseEnter('login')" class="animate__animated animate__slideInUp">
+                                <a href="#">
+                                    <img src="/assets/icons/svg/misc/locked.svg" width="40" height="40" uk-svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
